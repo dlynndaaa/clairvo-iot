@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function LoginPage({
   onLoginSuccess,
@@ -44,9 +45,14 @@ export default function LoginPage({
         <div className="bg-gray-800/80 backdrop-blur border border-gray-700 rounded-2xl p-8 shadow-2xl">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-white mb-2 flex items-center justify-center gap-2">
-              <span className="text-blue-400 text-5xl">◆</span>
-            </h1>
+            <div className="flex items-center justify-center mb-4">
+              <Image
+                src="/clairvo-logo-white.png"
+                alt="Clairvo Logo"
+                width={48}
+                height={48}
+              />
+            </div>
             <h2 className="text-2xl font-bold text-white mb-2">Login</h2>
             <p className="text-gray-400">Masuk ke Dashboard IoT Anda</p>
           </div>
@@ -109,7 +115,7 @@ export default function LoginPage({
 
           {/* Footer */}
           <p className="text-center text-gray-500 text-xs mt-6">
-            Sistem keamanan Clairvo IoT © 2025
+            &copy; 2025 Clairvo Team. Air Quality Monitoring System.
           </p>
         </div>
       </div>
