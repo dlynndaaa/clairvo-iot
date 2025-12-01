@@ -5,7 +5,7 @@ export default function LandingPage({ onLoginClick }: { onLoginClick: () => void
     <div className="min-h-screen bg-linear-to-br from-gray-900 via-blue-900 to-gray-900">
       {/* Header */}
       <header className="bg-gray-800/50 backdrop-blur border-b border-gray-700">
-        <div className="max-w-6xl mx-auto px-6 pt-2 pb-1">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <h1 className="text-3xl font-bold text-white flex items-center gap-3">
             <Image
               src="/clairvo-logo-white.png"
@@ -20,7 +20,7 @@ export default function LandingPage({ onLoginClick }: { onLoginClick: () => void
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 py-10">
+      <main className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div>
